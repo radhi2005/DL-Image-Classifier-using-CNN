@@ -182,7 +182,6 @@ def predict_image(model, image_index, dataset):
     print(f"Actual: {class_names[label]}")
     print(f"Predicted: {class_names[predicted.item()]}")
 
-# Predict image
 predict_image(model, image_index=80, dataset=test_dataset)
 
 
