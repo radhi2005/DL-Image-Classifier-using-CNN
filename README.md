@@ -35,9 +35,9 @@ Evaluate the model using the test dataset and visualize the results (accuracy, c
 
 ## PROGRAM
 
-### Name:HEMAVATHY S
+### Name:RADHIMEENA M
 
-### Register Number:212223230076
+### Register Number:212223040159
 
 ```python
 import torch as t
@@ -96,8 +96,8 @@ model = CNNClassifier()
 device = t.device("cuda" if t.cuda.is_available() else "cpu")
 model.to(device)
 
-print("Name: HEMAVATHY S")
-print("Reg.no: 212223230076")
+print("Name: RADHIMEENA M")
+print("Reg.no: 212223040159")
 
 from torchsummary import summary
 summary(model, input_size=(1, 28, 28))
@@ -143,8 +143,8 @@ def test_model(model, test_loader):
             all_labels.extend(labels.cpu().numpy())
 
     accuracy = correct / total
-    print("\nName: HEMAVATHY S")
-    print("Reg.no: 212223230076")
+    print("\nName: RADHIMEENA M")
+    print("Reg.no: 212223040159")
     print(f"Test Accuracy: {accuracy:.4f}")
 
     cm = confusion_matrix(all_labels, all_preds)
@@ -172,8 +172,8 @@ def predict_image(model, image_index, dataset):
         _, predicted = t.max(output, 1)
 
     class_names = [str(i) for i in range(10)]
-    print("\nName:HEMAVATHY S")
-    print("Reg.no: 212223230076")
+    print("\nName:RADHIMEENA M")
+    print("Reg.no: 212223040159")
     plt.imshow(image.cpu().squeeze(0), cmap='gray')
     plt.title(f"Actual: {class_names[label]}\nPredicted: {class_names[predicted.item()]}")
     plt.axis("off")
